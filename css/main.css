@@ -1,0 +1,100 @@
+/* Default style for all devices */
+body {
+    font-family: Verdana;
+    font-size: 1.0rem;
+    line-height: 1.5em;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+    padding: 10px 5px;
+}
+
+header {
+    text-align: center;
+}
+
+header,
+#contact,
+footer {
+    background-color: yellow;
+    margin: 0;
+    padding: 10px 5px;
+}
+
+    #contact .slogan,
+    #contact .address {
+        display: none;
+    }
+    #contact .phone {
+        text-align: center;
+    }
+    #contact .phone:before {
+        content: url(../img/phone.png);
+        padding-right: 8px;
+        padding-top: 5px;
+        vertical-align: middle;
+    }
+
+    footer .phone {
+        display: table;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    footer .phone:before {
+        content: url(../img/phone.png);
+        display: table-cell;
+        width: 30px;
+        vertical-align: middle;
+    }
+    footer .address {
+        display: table;
+        width: 100%;
+    }
+    footer .address:before {
+        content: url(../img/location.png);
+        display: table-cell;
+        width: 30px;
+        vertical-align: middle;
+    }
+
+#menu h2 {
+    background-color: #bbb;
+    padding: 10px 5px;
+    margin: 0;
+}
+#menu h3 {
+    background-color: #ddd;
+    padding: 10px 10px;
+    margin: 0;
+}
+#menu h3:before {
+    content: 'Max\'';
+    color: #666;
+}
+#menu p {
+    padding: 15px 10px;
+    margin: 0;
+}
+#menu p:first-letter {
+    text-transform: uppercase;
+}
+#menu .price {
+    float: right;
+}
+#menu .price:after {
+    content: '€';
+    padding-left: 2px;
+}
+
+/* Mobile version */
+@media (max-width: 41em) {
+}
+
+/* Bigger screens version */
+@media (min-width: 41em) {
+    #contact .slogan,
+    #contact .address {
+        display: block;
+    }
+}
