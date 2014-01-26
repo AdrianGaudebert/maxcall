@@ -21,11 +21,10 @@ footer {
     margin: 0;
     padding: 10px 5px;
 }
+footer {
+    border-top: 10px solid black;
+}
 
-    #contact .slogan,
-    #contact .address {
-        display: none;
-    }
     #contact .phone {
         text-align: center;
     }
@@ -36,36 +35,40 @@ footer {
         vertical-align: middle;
     }
 
-    footer .phone {
+    footer .address,
+    footer .phone,
+    footer .timetable {
         display: table;
         margin-bottom: 10px;
         width: 100%;
     }
+    footer .address:before,
+    footer .phone:before,
+    footer .timetable:before {
+        display: table-cell;
+        padding-right: 10px;
+        text-align: center;
+        vertical-align: middle;
+        width: 30px;
+    }
     footer .phone:before {
         content: url(../img/phone.png);
-        display: table-cell;
-        width: 30px;
-        vertical-align: middle;
-    }
-    footer .address {
-        display: table;
-        width: 100%;
     }
     footer .address:before {
         content: url(../img/location.png);
-        display: table-cell;
-        width: 30px;
-        vertical-align: middle;
+    }
+    footer .timetable:before {
+        content: url(../img/time.png);
     }
 
 #menu h2 {
-    background-color: #bbb;
+    background-color: black;
+    color: white;
     padding: 10px 5px;
     margin: 0;
 }
 #menu h3 {
-    background-color: #ddd;
-    padding: 10px 10px;
+    padding: 15px 10px 5px 10px;
     margin: 0;
 }
 #menu h3:before {
@@ -73,11 +76,9 @@ footer {
     color: #666;
 }
 #menu p {
-    padding: 15px 10px;
+    padding: 0px 10px 15px 10px;
     margin: 0;
-}
-#menu p:first-letter {
-    text-transform: uppercase;
+    font-style: italic;
 }
 #menu .price {
     float: right;
@@ -89,12 +90,31 @@ footer {
 
 /* Mobile version */
 @media (max-width: 41em) {
+    #contact .slogan,
+    #contact .address {
+        display: none;
+    }
 }
 
 /* Bigger screens version */
 @media (min-width: 41em) {
-    #contact .slogan,
-    #contact .address {
-        display: block;
+    #menu section {
+        width: 33.33%;
+        float: left;
+    }
+    #menu h2 {
+        text-align: center;
+    }
+    #menu h3,
+    #menu p {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    #menu .price {
+        margin-right: 10px;
+    }
+
+    footer {
+        clear: both;
     }
 }
