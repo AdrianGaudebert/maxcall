@@ -26,11 +26,6 @@
             "price": 9
         },
         {
-            "name": "Fish",
-            "ingredients": ["tomate", "thon", "anchois", "olives", "fromage", "origan"],
-            "price": 9
-        },
-        {
             "name": "Peon",
             "ingredients": ["crème fraiche", "oignons", "champignons", "lardons", "fromage", "origan"],
             "price": 9
@@ -96,13 +91,18 @@
             "price": 10
         },
         {
+            "name": "Fish",
+            "ingredients": ["tomate", "thon", "anchois", "olives", "fromage", "origan"],
+            "price": 10
+        },
+        {
             "name": "6 Fromages",
             "ingredients": ["tomate ou crème", "chèvre", "bleu", "reblochon", "feta", "emmental", "mozzarella", "origan"],
             "price": 10
         },
         {
             "name": "Océane",
-            "ingredients": ["tomate", "fruits de mer", "persillade", "crème", "fromage", "origan"],
+            "ingredients": ["tomate", "fruits de mer", "persillade", "crème", "champignons", "fromage", "origan"],
             "price": 11
         },
         {
@@ -122,7 +122,7 @@
         },
         {
             "name": "Roma",
-            "ingredients": ["tomate", "mozzarella", "salade", "jambon cru", "origan"],
+            "ingredients": ["tomate", "mozzarella", "jambon cru", "origan"],
             "price": 11
         }
     ]
