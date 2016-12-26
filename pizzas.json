@@ -3,130 +3,127 @@
         {
             "name": "Napoli",
             "ingredients": ["tomate", "anchois", "olives", "fromage", "origan"],
-            "price": 9
+            "price": 10
         },
         {
             "name": "Marguarita",
             "ingredients": ["tomate", "olives", "fromage", "origan"],
-            "price": 9
+            "price": 10
         },
         {
             "name": "Végétarienne",
             "ingredients": ["tomate", "poivrons", "oignons", "champignons", "aubergine", "olives", "fromage", "origan"],
-            "price": 9
+            "price": 10
         },
         {
             "name": "Queen",
             "ingredients": ["tomate", "champignons", "jambon", "olives", "fromage", "origan"],
-            "price": 9
+            "price": 10
         },
         {
             "name": "Pepperoni",
             "ingredients": ["tomate", "champignons", "chorizo", "olives", "fromage", "origan"],
-            "price": 9
+            "price": 10
         },
         {
             "name": "Peon",
             "ingredients": ["crème fraiche", "oignons", "champignons", "lardons", "fromage", "origan"],
-            "price": 9
+            "price": 10
         },
         {
             "name": "Meat",
             "ingredients": ["tomate", "poivrons", "oignons", "champignons", "viande aux herbes", "olives", "fromage", "origan"],
-            "price": 9
+            "price": 10
         },
         {
             "name": "Fromage",
             "ingredients": ["tomate", "chèvre", "fromage", "origan"],
-            "price": 9
+            "price": 10
         },
         {
             "name": "Fromage plus",
             "ingredients": ["crème fraiche", "bleu", "fromage", "origan"],
-            "price": 9
+            "price": 10
         },
         {
             "name": "Orientale",
             "ingredients": ["tomate", "poivrons", "oignons", "merguez", "olives", "fromage", "origan"],
-            "price": 9
+            "price": 10
         },
         {
             "name": "Nordique",
             "ingredients": ["crème fraiche", "champignons", "saumon fumé", "fromage", "origan"],
-            "price": 10
+            "price": 11
         },
         {
             "name": "Savoyarde",
             "ingredients": ["crème fraiche", "pomme de terre", "oignons", "lardons", "reblochon", "fromage", "origan"],
-            "price": 10
+            "price": 11
         },
         {
             "name": "Raclette",
             "ingredients": ["crème fraiche", "bacon", "raclette", "fromage", "origan"],
-            "price": 10
+            "price": 11
         },
         {
             "name": "Mexicaine",
             "ingredients": ["tomate", "poivrons", "viande aux herbes", "chorizo", "olives", "fromage", "origan"],
-            "price": 10
+            "price": 11
         },
         {
             "name": "Hawai",
             "ingredients": ["tomate", "volaille au curry", "poivrons", "ananas", "fromage", "origan"],
-            "price": 10
+            "price": 11
         },
         {
             "name": "Indonésienne",
             "ingredients": ["tomate", "volaille au curry", "poivrons", "oignons", "fromage"],
-            "price": 10
+            "price": 11
         },
         {
             "name": "Grecque",
             "ingredients": ["tomate", "viande aux herbes", "aubergine", "feta", "persillade", "olives", "fromage", "origan"],
-            "price": 10
+            "price": 11
         },
         {
             "name": "Londonienne",
             "ingredients": ["tomate", "jambon", "bacon", "oeuf", "fromage"],
-            "price": 10
+            "price": 11
         },
         {
             "name": "Fish",
             "ingredients": ["tomate", "thon", "anchois", "olives", "fromage", "origan"],
-            "price": 10
+            "price": 11
         },
         {
             "name": "6 Fromages",
             "ingredients": ["tomate ou crème", "chèvre", "bleu", "reblochon", "feta", "emmental", "mozzarella", "origan"],
-            "price": 10
+            "price": 11
         },
         {
             "name": "Océane",
             "ingredients": ["tomate", "fruits de mer", "persillade", "crème", "champignons", "fromage", "origan"],
-            "price": 11
+            "price": 12
         },
         {
             "name": "Périgord",
             "ingredients": ["crème fraiche", "oignons", "champignons", "magret de canard fumé", "fromage", "origan"],
-            "price": 11
+            "price": 12
         },
         {
             "name": "Royans",
             "ingredients": ["crème fraiche", "ravioles", "bleu", "fromage", "origan"],
-            "price": 11
+            "price": 12
         },
         {
             "name": "Ardéchoise",
             "ingredients": ["tomate", "chèvre", "noix", "fromage", "miel", "origan"],
-            "price": 11
+            "price": 12
         },
         {
             "name": "Roma",
             "ingredients": ["tomate", "mozzarella", "jambon cru", "origan"],
-            "price": 11
+            "price": 12
         }
     ]
 }
-
-
-
