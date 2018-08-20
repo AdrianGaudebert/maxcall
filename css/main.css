@@ -1,33 +1,72 @@
-/* Default style for all devices */
+/*
+Color Set - Gray Blue Gold
+#222222 - Dark Gray (font, title background)
+#556372 - Middle Gray (header bottom border)
+#728294 - Light Gray (pizza prefix)
+#1b436f - Dark Blue (background)
+#e1c10f - Gold (logo, links)
+#eeeeee - White (font, menu background)
+*/
+
+/*
+    This is built for mobile first.
+
+    All those styles apply to all devices but are targetting devices with
+    screens smaller than 41rem.
+    Any rule that applies to wider screen goes into the appropriate section
+    at the end of this file.
+*/
 body {
-    font-family: Verdana;
-    font-size: 1.0rem;
-    line-height: 1.5em;
+    background-color: #1b436f;
+    color: #222222;
+    font-family: Palatino, serif;
+    font-size: 1.1rem;
+    line-height: 1.375em;
+    text-rendering: optimizeLegibility;
 }
 
 h1, h2, h3 {
     font-weight: bold;
-    padding: 10px 5px;
+    padding: 10px 0;
+}
+
+a {
+    color: #e1c10f;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.clear,
+header,
+#contact,
+#menu,
+footer {
+    clear: both;
 }
 
 header {
+    border-bottom: 4px solid #556372;
     text-align: center;
 }
 
-header,
-#contact,
-footer {
-    background-color: yellow;
-    margin: 0;
-    padding: 10px 5px;
-}
-footer {
-    border-top: 10px solid black;
+/* We're hiding those elements on small screens. */
+#contact .address {
+    display: none;
+    font-style: italic;
 }
 
-    #contact .phone {
-        text-align: center;
-    }
+header,
+footer {
+    clear: both;
+    margin: 0;
+    padding: 10px 10px;
+}
+
+#contact {
+    color: #eeeeee;
+    font-size: 1.2em;
+    padding-top: 20px;
+}
     #contact .phone:before {
         content: url(../img/phone.png);
         padding-right: 8px;
@@ -35,6 +74,11 @@ footer {
         vertical-align: middle;
     }
 
+footer {
+    border-top: 10px solid #222222;
+    color: #eeeeee;
+    padding-top: 20px;
+}
     footer .address,
     footer .phone,
     footer .timetable {
@@ -61,57 +105,74 @@ footer {
         content: url(../img/time.png);
     }
 
-#menu h2 {
-    background-color: black;
-    color: white;
-    padding: 10px 5px;
-    margin: 0;
+#menu {
+    background: #eeeeee;
+    padding-bottom: 20px;
 }
-#menu h3 {
-    padding: 15px 10px 5px 10px;
-    margin: 0;
-}
-#menu h3:before {
-    content: 'Max\'';
-    color: #666;
-}
-#menu p {
-    padding: 0px 10px 15px 10px;
-    margin: 0;
-    font-style: italic;
-}
-#menu .price {
-    float: right;
-}
-#menu .price:after {
-    content: '€';
-    padding-left: 2px;
-}
-
-/* Mobile version */
-@media (max-width: 41em) {
-    #contact .slogan,
-    #contact .address {
-        display: none;
+    #menu h2 {
+        background-color: #222222;
+        color: #eeeeee;
+        padding: 15px 10px;
+        margin: 0;
     }
-}
+    #menu article {
+        padding: 15px 10px;
+        /*padding-top: 15px;
+        padding-bottom: 15px;*/
+    }
+        #menu article h3 {
+            margin: 0;
+        }
+        #menu article h3:before {
+            content: 'Max\'';
+            color: #728294;
+        }
+        #menu article p {
+            margin: 0;
+            font-style: italic;
+        }
+        #menu article .price {
+            float: right;
+        }
+        #menu article .price:after {
+            content: '€';
+            padding-left: 2px;
+        }
 
-/* Bigger screens version */
+/*
+    Wide screen rules.
+
+    Here come the rules for screens wider than 41em.
+    We do not differentiate screens further for the moment.
+*/
 @media (min-width: 41em) {
+    body {
+        font-size: 1.2rem;
+    }
+    header,
+    #contact {
+        text-align: left;
+    }
+    #contact .address {
+        display: block;
+    }
+
+    header h1 {
+        text-align: center;
+    }
+    #contact .phone {
+        float: right;
+    }
     #menu section {
         width: 33.33%;
         float: left;
     }
-    #menu h2 {
-        text-align: center;
-    }
-    #menu h3,
-    #menu p {
+    header,
+    footer,
+    #menu h2,
+    #menu article {
         padding-left: 50px;
         padding-right: 50px;
-    }
-    #menu .price {
-        margin-right: 10px;
     }
 
     footer {
