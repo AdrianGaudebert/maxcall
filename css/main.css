@@ -52,7 +52,6 @@ header {
 /* We're hiding those elements on small screens. */
 #contact .address {
     display: none;
-    font-style: italic;
 }
 
 header,
