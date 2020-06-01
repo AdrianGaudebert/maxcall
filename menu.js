@@ -6,9 +6,9 @@ $('document').ready(function () {
         'pizzas.json',
         function (data) {
             var menus = {
-                10: $('<section>').append($('<h2>').text('Pizza Classique')),
-                11: $('<section>').append($('<h2>').text('Pizza Spéciale')),
-                12: $('<section>').append($('<h2>').text('Pizza Gourmande')),
+                11: $('<section>').append($('<h2>').text('Pizza Classique')),
+                12: $('<section>').append($('<h2>').text('Pizza Spéciale')),
+                13: $('<section>').append($('<h2>').text('Pizza Gourmande')),
             };
 
             $.each(data['pizzas'], function (i, pizza) {
@@ -20,9 +20,9 @@ $('document').ready(function () {
                 .appendTo(menus[pizza.price]);
             });
 
-            $menu.append(menus[10])
-                 .append(menus[11])
-                 .append(menus[12]);
+            $menu.append(menus[11])
+                 .append(menus[12])
+                 .append(menus[13]);
         }
     )
 });
