@@ -132,6 +132,7 @@ footer {
         }
         #menu article .price {
             float: right;
+            padding-left: 8px;
         }
         #menu article .price:after {
             content: '€';
